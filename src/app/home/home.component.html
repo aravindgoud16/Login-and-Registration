@@ -1,0 +1,267 @@
+<!-- <div >
+  <ion-card >
+    <div class="main-div">
+      <div class="total-info">
+        <div class="logo">
+          <h2>main logo</h2>
+        </div>
+        <div class="nav-div">
+          <nav>
+            <ul>
+              <li><a href="#header">Home</a></li>
+              <li><a href="#header">About</a></li>
+              <li><a href="#header">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="join-icon">
+        <ion-icon [routerLink]="['/login']" name="person-circle-outline">{{profilrForm.firstName}</ion-icon>
+      </div>
+    </div>
+  </ion-card>
+  <ion-button [routerLink]="['/survey']" style="margin-top: 30%" expand="full" shape="round" color="secondary">
+    strat survey</ion-button>
+  
+</div> -->
+
+<ion-content>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <div class="logo mr-auto">
+        <!-- <img src="assets/img/logo.png"> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a title="survey" href="#" [routerLink]="['/survey']"
+          ><img src="../../assets/logo1.png" alt="logo" class="img-fluid"
+        /></a>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <!-- <li><a href="#services">Services</a></li> -->
+          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+          <li><a href="#team">Team</a></li>
+          <!-- <li><a href="#pricing">Pricing</a></li> -->
+
+          <li><a href="#contact">Contact</a></li>
+
+          <li class="get-started" [routerLink]="['/login']"><a href="#about">Get Started</a></li>
+        </ul>
+      </nav>
+      <!-- .nav-menu -->
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">This Is For Sample Survey</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">We are Analyzing The total Crop.</h2>
+          <div data-aos="fade-up" data-aos-delay="800">
+            <a href="#about" [routerLink]="['/survey']" class="btn-get-started scrollto">Get Start Survey</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+  <!-- ======= About Us Section ======= -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>About Us</h2>
+      </div>
+
+      <div class="row content">
+        <div data-aos="fade-up" data-aos-delay="150">
+          <p>
+            Sandya and Gayathri pursing MCA we plan to conducta on survey on lang evaluation here this survey is used to
+            know the majority of the people we arev very intresting in conducting in this survey beacuse it is used for
+            GOVT sectors and fertilizer sectors for producing the best seeds to make it available as mush as we need
+          </p>
+          <!-- <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis vitae odio ullam veniam, nemo recusandae
+            dolore fuga aperiam? Vel ex odit ipsam amet explicabo possimus laborum consectetur ea facilis neque.
+          </p> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About Us Section -->
+
+  <!-- ======= Team Section ======= -->
+  <section id="team" class="team section-bg">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p> -->
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-img">
+              <img src="../../assets/PROFIL1.jpg" class="img-fluid" alt="" />
+              <div class="social">
+                <a title="facebook" target="_blank" href="#"> <ion-icon name="logo-facebook"></ion-icon></a>
+                <a title="instagram" target="_blank" href="#"> <ion-icon name="logo-instagram"></ion-icon></a>
+                <a title="linkedin" target="_blank" href="#"> <ion-icon name="logo-linkedin"></ion-icon></a>
+                <a title="mail" target="_blank" href="mailto:gayathirithelu083@gmail.com">
+                  <ion-icon name="mail-open-outline"></ion-icon>
+                </a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Gayathri</h4>
+              <span>MCA FINAL YEAR</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <img src="../../assets/PROFIL1.jpg" class="img-fluid" alt="" />
+              <div class="social">
+                <a title="facebook" target="_blank" href=""> <ion-icon name="logo-facebook"></ion-icon></a>
+                <a title="instagram" target="_blank" href=""> <ion-icon name="logo-instagram"></ion-icon></a>
+                <a title="linkedin" target="_blank" href=""> <ion-icon name="logo-linkedin"></ion-icon></a>
+                <a title="mail" target="_blank" href="mailto:sanandhyakastala@gmail.com">
+                  <ion-icon name="mail-open-outline"></ion-icon>
+                </a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Sandhya</h4>
+              <span>MCA FINAL YEAR</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-img">
+              <img src="../../assets/PROFIL1.jpg" class="img-fluid" alt="" />
+              <div class="social">
+                <a title="facebook" target="_blank" href=""> <ion-icon name="logo-facebook"></ion-icon></a>
+                <a title="instagram" target="_blank" href=""> <ion-icon name="logo-instagram"></ion-icon></a>
+                <a title="linkedin" target="_blank" href=""> <ion-icon name="logo-linkedin"></ion-icon></a>
+                <a title="mail" target="_blank" href="mailto:">
+                  <ion-icon name="mail-open-outline"></ion-icon>
+                </a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Saikiran Konda</h4>
+              <span>MCA FINAL YEAR</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="400">
+            <div class="member-img">
+              <img src="../../assets/PROFIL1.jpg" class="img-fluid" alt="" />
+              <div class="social">
+                <a title="facebook" target="_blank" href=""> <ion-icon name="logo-facebook"></ion-icon></a>
+                <a title="instagram" target="_blank" href=""> <ion-icon name="logo-instagram"></ion-icon></a>
+                <a title="linkedin" target="_blank" href=""> <ion-icon name="logo-linkedin"></ion-icon></a>
+                <a title="mail" target="_blank" href="mailto:">
+                  <ion-icon name="mail-open-outline"></ion-icon>
+                </a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>vignesh Tulasigari</h4>
+              <span>MCA FINAL YEAR</span>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- End Team Section -->
+
+  <!--   ======= Contact Section =======  -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Contact Us</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0"></div>
+
+        <div class="col-lg-5 col-md-5 xol-xs-12 container" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-about">
+            <h3>ABOUT SURVEY</h3>
+            <p>
+              Motivation and Objectives of Survey The Government of the Republic of Zambia (GRZ) has a lot of emphasis
+              on the development of the agriculture sector to diversify the economy away from the traditional Forex
+              generating industries such as Mining. The Ministry of Agriculture (MoA) in conjunction with Indaba
+              Agriculture Policy Research Institute (IAPRI), the University of Zambia (UNZA), and Michigan State
+              University (MSU) embarked on exploring the development of emergent farmers (domestic investor farmers) in
+              Zambia through a pilot Emergent Farmers’ Survey (EFS) conducted in six districts
+            </p>
+            <div class="social-links">
+              <!-- <a href="#" class="twitter"><i class="icofont-twitter"></i></a> -->
+              <a target="_blank" href="#" class="facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a target="_blank" href="#" class="instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+              <!-- <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 col-md-5 col-xs-12 mt-4 mt-md-0 container" data-aos="fade-up" data-aos-delay="200">
+          <div class="info">
+            <div>
+              <i class="ri-map-pin-line"></i>
+              <p>NH 9, Vijayawada - Hyderabad Hwy, Kanchikacherla<br />Andhra Pradesh 521180</p>
+            </div>
+
+            <div>
+              <i class="ri-mail-send-line"></i>
+              <p>gayathirithelu083@gmail.com</p>
+            </div>
+
+            <div>
+              <i class="ri-phone-line"></i>
+              <p>+91 9391523885</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">&copy; Copyright <strong>MCA STUDENTS</strong>. All Rights Reserved</div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#header" class="scrollto">Home</a>
+            <a href="#about" class="scrollto">About</a>
+            <!-- <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a> -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+</ion-content>

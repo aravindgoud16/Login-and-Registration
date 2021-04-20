@@ -1,0 +1,31 @@
+.divs {
+  width: fit-content;
+  padding-top: 10px;
+}
+h2 {
+  font-size: 28px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: blueviolet;
+  text-decoration: underline orange;
+}
+ion-card {
+  // padding: 1% 10% 10% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ion-label {
+  color: black;
+  font-size: 18px;
+  font-family: serif;
+  font-weight: bold;
+}
+ion-input {
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  border: 1px solid black;
+}

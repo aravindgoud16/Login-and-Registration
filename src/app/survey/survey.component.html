@@ -1,0 +1,81 @@
+<!-- <ion-content> -->
+
+<div style="padding: 14%; padding-top: 0">
+  <h2>Survey Form</h2>
+  <ion-card>
+    <form [formGroup]="surveyform" (ngSubmit)="onSubmit()" novalidate>
+      <div class="divs">
+        <ion-label>NAME</ion-label>
+        <ion-input type="text" formControlName="firstName" placeholder="ENTER UR NAME"></ion-input>
+        <div>
+          <span
+            style="color: red"
+            *ngIf="surveyform.get('firstName').hasError('required') && surveyform.get('firstName').touched"
+            >name is required</span
+          >
+        </div>
+      </div>
+      <div class="divs">
+        <ion-label>age</ion-label>
+        <ion-input type="number" placeholder="ENTER UR AGE" formControlName="age"></ion-input>
+      </div>
+      <div class="divs">
+        <ion-label>FATHER NAME</ion-label>
+        <ion-input type="text" placeholder="ENTER UR FATHER NAME" formControlName="fname"></ion-input>
+      </div>
+      <div class="divs">
+        <ion-label>type</ion-label>
+        <!-- <ion-input type="text" placeholder="ENTER UR TYPE"></ion-input> -->
+        <ion-item style="border: 1px solid black">
+          <ion-label>Type of crop</ion-label>
+
+          <ion-select ok-text="Okay" multiple="select" cancel-text="Cancel" formControlName="type">
+            <ion-select-option name="crop">cotton</ion-select-option>
+            <ion-select-option name="crop">Vari</ion-select-option>
+            <ion-select-option name="crop">Mirchi</ion-select-option>
+            <ion-select-option name="crop">Soya</ion-select-option>
+            <ion-select-option name="crop">Mango</ion-select-option>
+            <ion-select-option name="crop">Banana</ion-select-option>
+            <ion-select-option name="crop">Graps</ion-select-option>
+            <ion-select-option name="crop">Others</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <div>
+          <span style="color: red" *ngIf="surveyform.get('type').hasError('required') && surveyform.get('type').touched"
+            >name is required</span
+          >
+        </div>
+      </div>
+      <div class="divs">
+        <ion-label> Total Land</ion-label>
+        <ion-input type="text" placeholder="ENTER UR LAND in ecrs" formControlName="land"></ion-input>
+      </div>
+      <div class="divs">
+        <ion-label> Adhar Card Number</ion-label>
+        <ion-input type="number" placeholder="ENTER UR CARD NUMBER" formControlName="cardno"></ion-input>
+      </div>
+      <div class="divs">
+        <ion-label>PHN no.</ion-label>
+        <ion-input type="number" placeholder="ENTER UR NUMBER" formControlName="phn"></ion-input>
+      </div>
+      <ion-button
+        color="success"
+        (click)="show = !show"
+        style="display: flex"
+        type="submit"
+        [disabled]="!surveyform.valid"
+        [routerLink]="['/final']"
+        >Submit</ion-button
+      >
+    </form>
+  </ion-card>
+  <!-- 
+  <div >
+    <h1>
+      thankyou.....@
+      <h3 [routerLink]="['/']">go to <ion-icon name="home-outline"></ion-icon></h3>
+    </h1>
+  </div> -->
+</div>
+
+<!-- </ion-content> -->
